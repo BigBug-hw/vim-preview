@@ -965,13 +965,13 @@ function! preview#preview_scroll(offset)
 	endif
 	if &previewwindow != 0
 		if a:offset == 1
-			exec "normal! \<c-d>"
+			exec "normal! \<c-e>"
 		elseif a:offset == -1
-			exec "normal! \<c-u>"
+			exec "normal! \<c-y>"
 		elseif a:offset >= 2
-			exec "normal! \<c-f>"
+			exec "normal! \<c-d>"
 		elseif a:offset <= -2
-			exec "normal! \<c-b>"
+			exec "normal! \<c-u>"
 		endif
 	endif
 	if uid != pid
